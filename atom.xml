@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://muwenhua.github.io</id>
     <title>Rain_blog</title>
-    <updated>2020-10-20T11:43:21.252Z</updated>
+    <updated>2020-10-20T11:43:54.865Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://muwenhua.github.io"/>
     <link rel="self" href="https://muwenhua.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://muwenhua.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Rain_blog</rights>
     <entry>
-        <title type="html"><![CDATA[关于Java中 类相关问题的描述]]></title>
+        <title type="html"><![CDATA[Java语言中 类相关问题的描述]]></title>
         <id>https://muwenhua.github.io/post/guan-yu-java-zhong-lei-xiang-guan-wen-ti-de-miao-shu/</id>
         <link href="https://muwenhua.github.io/post/guan-yu-java-zhong-lei-xiang-guan-wen-ti-de-miao-shu/">
         </link>
