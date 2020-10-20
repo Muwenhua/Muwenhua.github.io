@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://muwenhua.github.io</id>
     <title>Rain_blog</title>
-    <updated>2020-10-20T11:43:54.865Z</updated>
+    <updated>2020-10-20T13:15:17.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://muwenhua.github.io"/>
     <link rel="self" href="https://muwenhua.github.io/atom.xml"/>
@@ -17,7 +17,8 @@
         </link>
         <updated>2020-10-20T11:25:44.000Z</updated>
         <content type="html"><![CDATA[<p>1.类是对具体对象的抽象，必须先定义类，才能创建该类的<strong>对象</strong>。</p>
-<p>类包含属性和行为：属性被称为成员变量或字段，行为被称为 成员方法（Member Method 方法即为C语言中的函数）</p>
+<p>类包含属性和行为：<br>
+属性被称为成员变量或字段，行为被称为 成员方法（Member Method 方法即为C语言中的函数）</p>
 <p>例：定义person类</p>
 <p>person.java</p>
 <p>​	public class person {  //定义person类</p>
@@ -42,7 +43,8 @@
 </li>
 </ol>
 <p>​		3.1访问对象的实例变量</p>
-<p>​		3.2调用对象的方法</p>
+<p>​		3.2调用对象的方法<br>
+4.暂无 目前只学了这么多</p>
 ]]></content>
     </entry>
 </feed>
