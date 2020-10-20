@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Gridea | Rain_blog</title>
+<title>关于Java中 类相关问题的描述 | Rain_blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,12 @@
 
 
 
-    <meta name="description" content="做了人类想成仙，生在地上要上天。">
+    <meta name="description" content="1.类是对具体对象的抽象，必须先定义类，才能创建该类的对象。
+类包含属性和行为：属性被称为成员变量或字段，行为被称为 成员方法（Member Method 方法即为C语言中的函数）
+例：定义person类
+person.java
+​	pub..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,35 +93,49 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: Gridea</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://muwenhua.github.io/post/hello-gridea/">
-                  <h2 class="post-title">Hello Gridea</h2>
-                </a>
-                <div class="post-date">
-                  2018-12-12
-                </div>
-                <div class="post-abstract">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-                </div>
+          <div class="post-detail">
+            <h2 class="post-title">关于Java中 类相关问题的描述</h2>
+            <div class="post-date">2020-10-20</div>
+            
+              <div class="feature-container" style="background-image: url('https://muwenhua.github.io/post-images/guan-yu-java-zhong-lei-xiang-guan-wen-ti-de-miao-shu.jpg')">
               </div>
-              
-                <a class="right" href="https://muwenhua.github.io/post/hello-gridea/">
-                  <div class="feature-container" style="background-image: url('https://muwenhua.github.io/post-images/hello-gridea.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
+            
+            <div class="post-content" v-pre>
+              <p>1.类是对具体对象的抽象，必须先定义类，才能创建该类的<strong>对象</strong>。</p>
+<p>类包含属性和行为：属性被称为成员变量或字段，行为被称为 成员方法（Member Method 方法即为C语言中的函数）</p>
+<p>例：定义person类</p>
+<p>person.java</p>
+<p>​	public class person {  //定义person类</p>
+<p>​	String name;</p>
+<p>​	int age；</p>
+<p>public void say (String content)</p>
+<p>​	{</p>
+<p>​	System.out.print(content);</p>
+<p>​	}</p>
+<p>}</p>
+<p>public void person main ()</p>
+<p>{</p>
+<p>​	person p;  				//使用person类定义一个person类型的变量，此处的person本质可类比int float</p>
+<p>​	p= new person(); 	//通过new调用给person的构造器，返回一个person实例，并且可对p变量赋值</p>
+<p>​	System.out.print(p.name);		//可以通过对象调用</p>
+<p>​	p.say();									//引用方法</p>
+<p>}</p>
+<ol>
+<li>
+<p>new：申请空间，并放入堆内存</p>
+<p>3.创建一个person实例后，也就是person对象。该对象被赋给p。Java的对象有以下作用</p>
+</li>
+</ol>
+<p>​		3.1访问对象的实例变量</p>
+<p>​		3.2调用对象的方法</p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+            
+
+            
+
+          </div>
 
         </div>
       </div>
