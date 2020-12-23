@@ -1,22 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://muwenhua.github.io</id>
-    <title>Rain_blog</title>
-    <updated>2020-12-23T04:41:43.251Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://muwenhua.github.io"/>
-    <link rel="self" href="https://muwenhua.github.io/atom.xml"/>
-    <subtitle>做了人类想成仙，生在地上要上天。</subtitle>
-    <logo>https://muwenhua.github.io/images/avatar.png</logo>
-    <icon>https://muwenhua.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Rain_blog</rights>
-    <entry>
-        <title type="html"><![CDATA[JAVA华为云部分代码]]></title>
-        <id>https://muwenhua.github.io/post/java-hua-wei-yun-bu-fen-dai-ma/</id>
-        <link href="https://muwenhua.github.io/post/java-hua-wei-yun-bu-fen-dai-ma/">
-        </link>
-        <updated>2020-12-23T04:38:45.000Z</updated>
-        <content type="html"><![CDATA[<p>SIM</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>JAVA华为云部分代码 | Rain_blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://muwenhua.github.io/favicon.ico?v=1608698495829">
+<link rel="stylesheet" href="https://muwenhua.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="SIM
+import java.util.Scanner;
+public class Example5_13 {
+public static void main(String args[]) {
+​    MobileTelephone t..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://muwenhua.github.io">
+        <img src="https://muwenhua.github.io/images/avatar.png?v=1608698495829" class="site-logo">
+        <h1 class="site-title">Rain_blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      做了人类想成仙，生在地上要上天。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://muwenhua.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">JAVA华为云部分代码</h2>
+            <div class="post-date">2020-12-23</div>
+            
+              <div class="feature-container" style="background-image: url('https://muwenhua.github.io/post-images/java-hua-wei-yun-bu-fen-dai-ma.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>SIM</p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_13 {</p>
 <p>public static void main(String args[]) {</p>
@@ -775,134 +860,46 @@
 <p>}</p>
 <p>}</p>
 <p>}<img src="https://muwenhua.github.io/post-images/1608698409374.jpg" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JAVA的对象由特征到抽象类与接口]]></title>
-        <id>https://muwenhua.github.io/post/java-de-dui-xiang-you-te-zheng-dao-chou-xiang-lei-yu-jie-kou/</id>
-        <link href="https://muwenhua.github.io/post/java-de-dui-xiang-you-te-zheng-dao-chou-xiang-lei-yu-jie-kou/">
-        </link>
-        <updated>2020-11-26T14:50:28.000Z</updated>
-        <content type="html"><![CDATA[<h2 id=""><img src="https://muwenhua.github.io/post-images/1606739357359.jpg" alt="" loading="lazy"></h2>
-<p>在了解抽象类与接口之前，我们需要首先明白面向对象的三大特征：封装、多态与继承<br>
-1.1 封装<br>
-封装是指把一个对象的状态信息（也就是属性）隐藏在对象内部，不允许外部对象直接访问对象的内部信息。但是可以提供一些可以被外界访问的方法来操作属性。就好像我们看不到挂在墙上的空调的内部的零件信息（也就是属性），但是可以通过遥控器（方法）来控制空调。如果属性不想被外界访问，我们大可不必提供方法给外界访问。但是如果一个类没有提供给外界访问的方法，那么这个类也没有什么意义了。就好像如果没有空调遥控器，那么我们就无法操控空凋制冷，空调本身就没有意义了（当然现在还有很多其他方法 ，这里只是为了举例子）。</p>
-<pre><code>public class Student {
-private int id;//id属性私有化
-private String name;//name属性私有化
 
-//获取id的方法
-public int getId() {
-return id;
-}
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://muwenhua.github.io/post/java-de-dui-xiang-you-te-zheng-dao-chou-xiang-lei-yu-jie-kou/">
+                  <h3 class="post-title">
+                    JAVA的对象由特征到抽象类与接口
+                  </h3>
+                </a>
+              </div>
+            
 
-//设置id的方法
-public void setId(int id) {
-this.id = id;
-}
+            
 
-//获取name的方法
-public String getName() {
-return name;
-}
+          </div>
 
-//设置name的方法
-public void setName(String name) {
-     this.name = name;
-}
-</code></pre>
-<p>}<br>
-1.2. 继承<br>
-不同类型的对象，相互之间经常有一定数量的共同点。例如，小明同学、小红同学、小李同学，都共享学生的特性（班级、学号等）。同时，每一个对象还定义了额外的特性使得他们与众不同。例如小明的数学比较好，小红的性格惹人喜爱；小李的力气比较大。继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承，可以快速地创建新的类，可以提高代码的重用，程序的可维护性，节省大量创建新类的时间 ，提高我们的开发效率。</p>
-<p>关于继承如下 3 点请记住：</p>
-<p>子类拥有父类对象所有的属性和方法（包括私有属性和私有方法），但是父类中的私有属性和方法子类是无法访问，只是拥有。<br>
-子类可以拥有自己属性和方法，即子类可以对父类进行扩展。<br>
-子类可以用自己的方式实现父类的方法。（以后介绍）。<br>
-1.3. 多态<br>
-多态，顾名思义，表示一个对象具有多种的状态。具体表现为父类的引用指向子类的实例。</p>
-<p>多态的特点:<br>
-对象类型和引用类型之间具有继承（类）/实现（接口）的关系；<br>
-对象类型不可变，引用类型可变；<br>
-方法具有多态性，属性不具有多态性；<br>
-引用类型变量发出的方法调用的到底是哪个类中的方法，必须在程序运行期间才能确定；<br>
-多态不能调用“只在子类存在但在父类不存在”的方法；<br>
-如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</p>
-<p>1.3.1. 在一个静态方法内调用一个非静态成员为什么是非法的?<br>
-由于静态方法可以不通过对象进行调用，因此在静态方法里，不能调用其他非静态变量，也不可以访问非静态变量成员。</p>
-<p>1.3.2. 静态方法和实例方法有何不同<br>
-在外部调用静态方法时，可以使用&quot;类名.方法名&quot;的方式，也可以使用&quot;对象名.方法名&quot;的方式。而实例方法只有后面这种方式。也就是说，调用静态方法可以无需创建对象。</p>
-<p>静态方法在访问本类的成员时，只允许访问静态成员（即静态成员变量和静态方法），而不允许访问实例成员变量和实例方法；实例方法则无此限制。</p>
-<h2 id="以上内容来自httpsgithubcomsnailclimbjavaguideblobmasterdocsjavabasis">//以上内容来自https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/basis</h2>
-<p>抽象类其实就是包含着抽象方法的类，抽象方法即为：在一个类里面有成员函数和成员变量，成员函数的组成是：访问修饰符+返回值类型+函数名+参数表+函数体<br>
-例如<br>
-public void fun () { }  缺一不可。<br>
-抽象函数顾名思义就是函数的抽象，它与函数的关系就好比类与对象的关系一样。<br>
-抽象类的组成是：<br>
-访问修饰符+abstract关键字+返回值类型 +函数名+参数表+分号<br>
-例如：<br>
-public abstract void fun() ;   //区别多了一个abstract关键字且没有函数体，取而代之的是分号。<br>
-2.1抽象方法<br>
-只有在抽象类中才能定义抽象方法，所以抽象类也应该有abstract关键字。<br>
-格式是abstract + class +类名<br>
-例如 ：abstract class people {}   //抽象方法没有分号，也不能实例化对象<br>
-抽象方法存在的意义只能被类继承，然后重写它的抽象方法之后这个类才可以实例化对象。类是对象的抽象，那么抽象类就是类的抽象。</p>
-<p>2.2抽象方法和抽象类的意义<br>
-抽象方法是抽象类的核心，有了抽象方法的抽象类才有灵魂。抽象方法的意义在于：当我们继承了一个抽象类的时候，抽象方法的存在迫使我们必须要重写抽象方法才能实现类的使用。</p>
-<p><strong>补充：重载和重写的区别</strong><br>
-重载：<br>
-（1）就是同样的一个方法能够根据输入数据的不同，做出不同的处理<br>
-（2）发生在同一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同。<br>
-<strong>重载就是同一个类中多个同名方法根据不同的传参来执行不同的逻辑处理。</strong></p>
-<p>重写：<br>
-（1）当子类继承自父类的相同方法，输入数据一样，但要做出有别于父类的响应时，你就要覆盖父类方法<br>
-（2）返回值类型、方法名、参数列表必须相同，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类。<br>
-（3）如果父类方法访问修饰符为 private/final/static 则子类就不能重写该方法，但是被 static 修饰的方法能够被再次声明。<br>
-（4）构造方法无法被重写<br>
-<strong>重写就是子类对父类方法的重新改造，外部样子不能改变，内部逻辑可以改变</strong></p>
-<p>2.3抽象类和接口的联系与区别<br>
-（1）抽象类可以存在普通成员函数，而接口中只能存在public abstract 方法。<br>
-（2）抽象类中的成员变量可以是各种类型的，而接口中的成员变量只能是public static final类型的。<br>
-（3）抽象类只能继承一个，接口可以实现多个。</p>
-<p>//如有问题请致邮箱 rainhao@223@gmail.com</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java语言中 类相关问题的描述]]></title>
-        <id>https://muwenhua.github.io/post/guan-yu-java-zhong-lei-xiang-guan-wen-ti-de-miao-shu/</id>
-        <link href="https://muwenhua.github.io/post/guan-yu-java-zhong-lei-xiang-guan-wen-ti-de-miao-shu/">
-        </link>
-        <updated>2020-10-20T11:25:44.000Z</updated>
-        <content type="html"><![CDATA[<p>1.类是对具体对象的抽象，必须先定义类，才能创建该类的<strong>对象</strong>。</p>
-<p>类包含属性和行为：<br>
-属性被称为成员变量或字段，行为被称为 成员方法（Member Method 方法即为C语言中的函数）</p>
-<p>例：定义person类</p>
-<p>person.java</p>
-<p>​	public class person {  //定义person类</p>
-<p>​	String name;</p>
-<p>​	int age；</p>
-<p>public void say (String content)</p>
-<p>​	{</p>
-<p>​	System.out.print(content);</p>
-<p>​	}</p>
-<p>}</p>
-<p>public void person main ()</p>
-<p>{</p>
-<p>​	person p;  				//使用person类定义一个person类型的变量，此处的person本质可类比int float</p>
-<p>​	p= new person(); 	//通过new调用给person的构造器，返回一个person实例，并且可对p变量赋值</p>
-<p>​	System.out.print(p.name);		//可以通过对象调用</p>
-<p>​	p.say();									//引用方法</p>
-<p>}</p>
-<ol>
-<li>
-<p>new：申请空间，并放入堆内存</p>
-<p>3.创建一个person实例后，也就是person对象。该对象被赋给p。Java的对象有以下作用</p>
-</li>
-</ol>
-<p>​		3.1对象是本身已知的事物：被称为实例变量</p>
-<p>​		3.2对象是可以执行的动作，此时被称为：方法<br>
--&gt;对象是类设计中的一部分,类是对象设计的“蓝图”<br>
-4.暂无 目前只学了这么多<br>
-//第一次写blog 如若有问题请联系博主</p>
-]]></content>
-    </entry>
-</feed>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
