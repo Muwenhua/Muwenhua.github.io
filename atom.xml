@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://muwenhua.github.io</id>
     <title>Rain_blog</title>
-    <updated>2020-12-23T04:56:53.447Z</updated>
+    <updated>2020-12-23T05:31:36.365Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://muwenhua.github.io"/>
     <link rel="self" href="https://muwenhua.github.io/atom.xml"/>
@@ -16,7 +16,8 @@
         <link href="https://muwenhua.github.io/post/java-hua-wei-yun-bu-fen-dai-ma/">
         </link>
         <updated>2020-12-23T04:38:45.000Z</updated>
-        <content type="html"><![CDATA[<p>SIM</p>
+        <content type="html"><![CDATA[<p><strong>子类与继承 作业1</strong></p>
+<p>SIM</p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_13 {</p>
 <p>public static void main(String args[]) {</p>
@@ -73,7 +74,7 @@
 <p>​    System.out.println(&quot;手机号码是:&quot;+card.giveNumber());</p>
 <p>}</p>
 <p>}</p>
-<p>平均数</p>
+<p><strong>平均数</strong></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_7 {</p>
 <p>public static void main(String args[]) {</p>
@@ -110,7 +111,7 @@
 <p>​    return c/2;</p>
 <p>}</p>
 <p>}</p>
-<p>输入字符串打印输出</p>
+<p><strong>输入字符串打印输出</strong></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_8 {</p>
 <p>public static void main(String args[]) {</p>
@@ -142,7 +143,7 @@
 <p>​    System.out.println(&quot;婚否=&quot;+marriage);</p>
 <p>}</p>
 <p>}</p>
-<p>计算圆的面积</p>
+<p><strong>计算圆的面积</strong></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_9 {</p>
 <p>public static void main(String args[]) {</p>
@@ -158,7 +159,7 @@
 <p>​    return PI<em>r</em>r;</p>
 <p>}</p>
 <p>}</p>
-<p>输入字符串和两个数字</p>
+<p><strong>输入字符串和两个数字</strong></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_10 {</p>
 <p>public static void main(String args[]) {</p>
@@ -187,7 +188,7 @@
 <p>​    System.out.println(&quot;***&quot;+s+&quot;***&quot;);</p>
 <p>}</p>
 <p>}</p>
-<p>对输入字符进行打印</p>
+<p><strong>对输入字符进行打印</strong></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_11 {</p>
 <p>public static void main(String args[]) {</p>
@@ -215,7 +216,7 @@
 <p>​    System.out.println(call);</p>
 <p>}</p>
 <p>}</p>
-<p>对输入字符串进行打印</p>
+<p><strong>对输入字符串进行打印</strong></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example5_12 {</p>
 <p>public static void main(String args[]) {</p>
@@ -263,8 +264,8 @@
 <p>​    friend.cooking(scanner);</p>
 <p>}</p>
 <p>}</p>
-<p>二 接口</p>
-<p>计算输入数字的和</p>
+<p><strong>二 接口</strong></p>
+<p><em>计算输入数字的和</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example6_1 {</p>
 <p>public static void main(String args[]) {</p>
@@ -308,7 +309,7 @@
 <p>​    return MAX+x;</p>
 <p>}</p>
 <p>}</p>
-<p>对输入的字符串进行打印输出</p>
+<p><em>对输入的字符串进行打印输出</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example6_2 {</p>
 <p>public static void main(String args[]) {</p>
@@ -335,7 +336,7 @@
 <p>​    System.out.println(s);</p>
 <p>}</p>
 <p>}</p>
-<p>对输入的字符串进行拼接打印输出</p>
+<p><em>对输入的字符串进行拼接打印输出</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example6_3 {</p>
 <p>public static void main(String args[]) {</p>
@@ -398,7 +399,7 @@
 <p>​    System.out.println(&quot;电影院安装了&quot;+t+&quot;空调&quot;);</p>
 <p>}</p>
 <p>}</p>
-<p>计算两个数的算数平均值和几何平均值</p>
+<p><em>计算两个数的算数平均值和几何平均值</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example6_4 {</p>
 <p>public static void main(String args[]) {</p>
@@ -433,7 +434,7 @@
 <p>​    return aver;</p>
 <p>}</p>
 <p>}</p>
-<p>函数提示语句，打印字符串，打印输出</p>
+<p><em>函数提示语句，打印字符串，打印输出</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example6_5 {</p>
 <p>public static void main(String args[]) {</p>
@@ -463,7 +464,7 @@
 <p>​    hello.speakHello(scanner);          //接口回调</p>
 <p>}</p>
 <p>}</p>
-<p>实现多态</p>
+<p><em>实现多态</em></p>
 <p>import java.util.Scanner;</p>
 <p>//基类Shape建立了一个通用接口——也就是说，所有（几何）形状都可以描绘和删除。</p>
 <p>class Shape {</p>
@@ -527,7 +528,7 @@
 <p>​    }</p>
 <p>}</p>
 <p>}</p>
-<p>抽象类的运用</p>
+<p><em>抽象类的运用</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example7_101 {</p>
 <p>static public void main(String[] args) {</p>
@@ -560,8 +561,8 @@
 <p>}</p>
 <p>public abstract void drives();</p>
 <p>}</p>
-<p>三 内部类与异常类-作业1</p>
-<p>计算输入4个数的和</p>
+<p><strong>三 内部类与异常类-作业1</strong></p>
+<p><em>计算输入4个数的和</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example7_6 {</p>
 <p>public static void main (String args[ ]) {</p>
@@ -579,7 +580,7 @@
 <p>​    System.out.println(&quot;总成绩:&quot;+sum);</p>
 <p>}</p>
 <p>}</p>
-<p>处理数组越界异常</p>
+<p><em>处理数组越界异常</em></p>
 <p>import java.util.Scanner;</p>
 <p>/**</p>
 <p>* TODO: 定义一个长度为8的课程数组，随机输入课程的序号，获取课程的名称，进行输出，如果不存在则捕捉数组越界的异常</p>
@@ -603,7 +604,7 @@
 <p>​    }</p>
 <p>}</p>
 <p>}</p>
-<p>自定义异常</p>
+<p><em>自定义异常</em></p>
 <p>import java.util.Scanner;</p>
 <p>/**</p>
 <p>* TODO: 输入账号名称，如果大于10，抛出“账号名称超长”的自定义异常， 如果小于5，抛出“账号名称超短”的自定义异常</p>
@@ -654,7 +655,7 @@
 <p>​    super(&quot;账号名称超短，必须大于5个字符&quot;);</p>
 <p>}</p>
 <p>}</p>
-<p>自定义异常类，计算银行收入、支出</p>
+<p><em>自定义异常类，计算银行收入、支出</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example7_5 {</p>
 <p>public static void main(String args[]) {</p>
@@ -697,7 +698,7 @@
 <p>​    return message;</p>
 <p>}</p>
 <p>}</p>
-<p>输入三个数字，其中第二个数字为...</p>
+<p><em>输入三个数字，其中第二个数字为...</em></p>
 <p>import java.util.Scanner;</p>
 <p>public class Example7_4 {</p>
 <p>public static void main(String args[ ]) {</p>
@@ -724,7 +725,7 @@
 <p>​    }</p>
 <p>}</p>
 <p>}</p>
-<p>根据输入装载量，计算货车</p>
+<p><em>根据输入装载量，计算货车</em></p>
 <p>import java.util.Scanner;</p>
 <p>class DangerException extends Exception {</p>
 <p>final String message = &quot;超载&quot;;</p>
@@ -775,7 +776,7 @@
 <p>}</p>
 <p>}</p>
 <p>}<img src="https://muwenhua.github.io/post-images/1608698409374.jpg" alt="" loading="lazy"></p>
-<p>////如有问题请致邮箱 rainhao@223@gmail.com</p>
+<p>//如有问题请致邮箱 rainhao@223@gmail.com</p>
 ]]></content>
     </entry>
     <entry>
