@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://muwenhua.github.io/favicon.ico?v=1609144795208">
+<link rel="shortcut icon" href="https://muwenhua.github.io/favicon.ico?v=1609146526599">
 <link rel="stylesheet" href="https://muwenhua.github.io/styles/main.css">
 
 
@@ -31,7 +31,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://muwenhua.github.io">
-        <img src="https://muwenhua.github.io/images/avatar.png?v=1609144795208" class="site-logo">
+        <img src="https://muwenhua.github.io/images/avatar.png?v=1609146526599" class="site-logo">
         <h1 class="site-title">Rain_blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -141,6 +141,74 @@ this.name = name;
 引用类型变量发出的方法调用的到底是哪个类中的方法，必须在程序运行期间才能确定；<br>
 多态不能调用“只在子类存在但在父类不存在”的方法；<br>
 如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</p>
+<!-- more -->
+<p>import java.util.Scanner;</p>
+<pre><code>//基类Shape建立了一个通用接口，所有（几何）形状都可以描绘和删除。
+class Shape {
+void draw() {
+}
+void erase() {
+}
+</code></pre>
+<p>}</p>
+<pre><code>//派生类覆盖了draw方法，为每种特殊类型的几何形状都提供了独一无二的行为。
+class Circle extends Shape {
+@Override // @Override注解，表示覆盖父类方法
+void draw() {
+System.out.println(&quot;Circle.draw()&quot;);
+}
+@Override
+void erase() {
+System.out.println(&quot;Circle.erase()&quot;);
+}
+}
+class Square extends Shape {
+@Override
+void draw() {
+System.out.println(&quot;Square.draw()&quot;);
+}
+@Override
+void erase() {
+System.out.println(&quot;Square.erase()&quot;);
+}
+}
+class Triangle extends Shape {
+@Override
+void draw() {
+System.out.println(&quot;Triangle.draw()&quot;);
+}
+@Override
+void erase() {
+System.out.println(&quot;Triangle.erase()&quot;);
+}
+}
+//下面对动态绑定进行测试如下：
+public class Example7_100 {
+public static void main(String[] args) {
+	Scanner reader = new Scanner(System.in);
+Shape[] shape = new Shape[3];
+int n;
+for (int i = 0; i &lt; shape.length; i++) {
+n = reader.nextInt();
+switch (n) {
+case 0:
+shape[i] = new Circle();
+break;
+case 1:
+shape[i] = new Square();
+break;
+case 2:
+shape[i] = new Triangle();
+}
+}
+for (Shape oneS : shape) { // 增强for循环，应在JDK 5及其以上版本运行
+//TODO:调用draw()方法	
+oneS.draw();
+}
+}
+}
+</code></pre>
+<!-- more -->
 <p>1.3.1. 在一个静态方法内调用一个非静态成员为什么是非法的?<br>
 由于静态方法可以不通过对象进行调用，因此在静态方法里，不能调用其他非静态变量，也不可以访问非静态变量成员。</p>
 <p>1.3.2. 静态方法和实例方法有何不同<br>

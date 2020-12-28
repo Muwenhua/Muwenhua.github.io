@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://muwenhua.github.io</id>
     <title>Rain_blog</title>
-    <updated>2020-12-28T08:56:59.228Z</updated>
+    <updated>2020-12-28T09:08:50.677Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://muwenhua.github.io"/>
     <link rel="self" href="https://muwenhua.github.io/atom.xml"/>
@@ -786,6 +786,51 @@
         <link href="https://muwenhua.github.io/post/java-de-dui-xiang-you-te-zheng-dao-chou-xiang-lei-yu-jie-kou/">
         </link>
         <updated>2020-11-26T14:50:28.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id=""><img src="https://muwenhua.github.io/post-images/1606739357359.jpg" alt="" loading="lazy"></h2>
+<p>在了解抽象类与接口之前，我们需要首先明白面向对象的三大特征：封装、多态与继承<br>
+1.1 封装<br>
+封装是指把一个对象的状态信息（也就是属性）隐藏在对象内部，不允许外部对象直接访问对象的内部信息。但是可以提供一些可以被外界访问的方法来操作属性。就好像我们看不到挂在墙上的空调的内部的零件信息（也就是属性），但是可以通过遥控器（方法）来控制空调。如果属性不想被外界访问，我们大可不必提供方法给外界访问。但是如果一个类没有提供给外界访问的方法，那么这个类也没有什么意义了。就好像如果没有空调遥控器，那么我们就无法操控空凋制冷，空调本身就没有意义了（当然现在还有很多其他方法 ，这里只是为了举例子）。</p>
+<pre><code>public class Student {
+private int id;//id属性私有化
+private String name;//name属性私有化
+
+//获取id的方法
+public int getId() {
+return id;
+}
+
+//设置id的方法
+public void setId(int id) {
+this.id = id;
+}
+
+//获取name的方法
+public String getName() {
+return name;
+}
+
+//设置name的方法
+public void setName(String name) {
+this.name = name;
+}
+</code></pre>
+<p>}<br>
+1.2. 继承<br>
+不同类型的对象，相互之间经常有一定数量的共同点。例如，小明同学、小红同学、小李同学，都共享学生的特性（班级、学号等）。同时，每一个对象还定义了额外的特性使得他们与众不同。例如小明的数学比较好，小红的性格惹人喜爱；小李的力气比较大。继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承，可以快速地创建新的类，可以提高代码的重用，程序的可维护性，节省大量创建新类的时间 ，提高我们的开发效率。</p>
+<p>关于继承如下 3 点请记住：</p>
+<p><strong>子类拥有父类对象所有的属性和方法（包括私有属性和私有方法），但是父类中的私有属性和方法子类是无法访问，只是拥有。</strong><br>
+<strong>子类可以拥有自己属性和方法，即子类可以对父类进行扩展。</strong><br>
+<strong>子类可以用自己的方式实现父类的方法。（以后介绍）。</strong><br>
+1.3. 多态<br>
+多态，顾名思义，表示一个对象具有多种的状态。具体表现为父类的引用指向子类的实例。</p>
+<p>多态的特点:<br>
+对象类型和引用类型之间具有继承（类）/实现（接口）的关系；<br>
+对象类型不可变，引用类型可变；<br>
+方法具有多态性，属性不具有多态性；<br>
+引用类型变量发出的方法调用的到底是哪个类中的方法，必须在程序运行期间才能确定；<br>
+多态不能调用“只在子类存在但在父类不存在”的方法；<br>
+如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</p>
+]]></summary>
         <content type="html"><![CDATA[<h2 id=""><img src="https://muwenhua.github.io/post-images/1606739357359.jpg" alt="" loading="lazy"></h2>
 <p>在了解抽象类与接口之前，我们需要首先明白面向对象的三大特征：封装、多态与继承<br>
 1.1 封装<br>
@@ -830,6 +875,74 @@ this.name = name;
 引用类型变量发出的方法调用的到底是哪个类中的方法，必须在程序运行期间才能确定；<br>
 多态不能调用“只在子类存在但在父类不存在”的方法；<br>
 如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</p>
+<!-- more -->
+<p>import java.util.Scanner;</p>
+<pre><code>//基类Shape建立了一个通用接口，所有（几何）形状都可以描绘和删除。
+class Shape {
+void draw() {
+}
+void erase() {
+}
+</code></pre>
+<p>}</p>
+<pre><code>//派生类覆盖了draw方法，为每种特殊类型的几何形状都提供了独一无二的行为。
+class Circle extends Shape {
+@Override // @Override注解，表示覆盖父类方法
+void draw() {
+System.out.println(&quot;Circle.draw()&quot;);
+}
+@Override
+void erase() {
+System.out.println(&quot;Circle.erase()&quot;);
+}
+}
+class Square extends Shape {
+@Override
+void draw() {
+System.out.println(&quot;Square.draw()&quot;);
+}
+@Override
+void erase() {
+System.out.println(&quot;Square.erase()&quot;);
+}
+}
+class Triangle extends Shape {
+@Override
+void draw() {
+System.out.println(&quot;Triangle.draw()&quot;);
+}
+@Override
+void erase() {
+System.out.println(&quot;Triangle.erase()&quot;);
+}
+}
+//下面对动态绑定进行测试如下：
+public class Example7_100 {
+public static void main(String[] args) {
+	Scanner reader = new Scanner(System.in);
+Shape[] shape = new Shape[3];
+int n;
+for (int i = 0; i &lt; shape.length; i++) {
+n = reader.nextInt();
+switch (n) {
+case 0:
+shape[i] = new Circle();
+break;
+case 1:
+shape[i] = new Square();
+break;
+case 2:
+shape[i] = new Triangle();
+}
+}
+for (Shape oneS : shape) { // 增强for循环，应在JDK 5及其以上版本运行
+//TODO:调用draw()方法	
+oneS.draw();
+}
+}
+}
+</code></pre>
+<!-- more -->
 <p>1.3.1. 在一个静态方法内调用一个非静态成员为什么是非法的?<br>
 由于静态方法可以不通过对象进行调用，因此在静态方法里，不能调用其他非静态变量，也不可以访问非静态变量成员。</p>
 <p>1.3.2. 静态方法和实例方法有何不同<br>

@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://muwenhua.github.io/favicon.ico?v=1609144795208">
+<link rel="shortcut icon" href="https://muwenhua.github.io/favicon.ico?v=1609146526599">
 <link rel="stylesheet" href="https://muwenhua.github.io/styles/main.css">
 
 
@@ -28,7 +28,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://muwenhua.github.io">
-        <img src="https://muwenhua.github.io/images/avatar.png?v=1609144795208" class="site-logo">
+        <img src="https://muwenhua.github.io/images/avatar.png?v=1609146526599" class="site-logo">
         <h1 class="site-title">Rain_blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -119,7 +119,51 @@
                   2020-11-26
                 </div>
                 <div class="post-abstract">
-                  
+                  <h2 id=""><img src="https://muwenhua.github.io/post-images/1606739357359.jpg" alt="" loading="lazy"></h2>
+<p>在了解抽象类与接口之前，我们需要首先明白面向对象的三大特征：封装、多态与继承<br>
+1.1 封装<br>
+封装是指把一个对象的状态信息（也就是属性）隐藏在对象内部，不允许外部对象直接访问对象的内部信息。但是可以提供一些可以被外界访问的方法来操作属性。就好像我们看不到挂在墙上的空调的内部的零件信息（也就是属性），但是可以通过遥控器（方法）来控制空调。如果属性不想被外界访问，我们大可不必提供方法给外界访问。但是如果一个类没有提供给外界访问的方法，那么这个类也没有什么意义了。就好像如果没有空调遥控器，那么我们就无法操控空凋制冷，空调本身就没有意义了（当然现在还有很多其他方法 ，这里只是为了举例子）。</p>
+<pre><code>public class Student {
+private int id;//id属性私有化
+private String name;//name属性私有化
+
+//获取id的方法
+public int getId() {
+return id;
+}
+
+//设置id的方法
+public void setId(int id) {
+this.id = id;
+}
+
+//获取name的方法
+public String getName() {
+return name;
+}
+
+//设置name的方法
+public void setName(String name) {
+this.name = name;
+}
+</code></pre>
+<p>}<br>
+1.2. 继承<br>
+不同类型的对象，相互之间经常有一定数量的共同点。例如，小明同学、小红同学、小李同学，都共享学生的特性（班级、学号等）。同时，每一个对象还定义了额外的特性使得他们与众不同。例如小明的数学比较好，小红的性格惹人喜爱；小李的力气比较大。继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承，可以快速地创建新的类，可以提高代码的重用，程序的可维护性，节省大量创建新类的时间 ，提高我们的开发效率。</p>
+<p>关于继承如下 3 点请记住：</p>
+<p><strong>子类拥有父类对象所有的属性和方法（包括私有属性和私有方法），但是父类中的私有属性和方法子类是无法访问，只是拥有。</strong><br>
+<strong>子类可以拥有自己属性和方法，即子类可以对父类进行扩展。</strong><br>
+<strong>子类可以用自己的方式实现父类的方法。（以后介绍）。</strong><br>
+1.3. 多态<br>
+多态，顾名思义，表示一个对象具有多种的状态。具体表现为父类的引用指向子类的实例。</p>
+<p>多态的特点:<br>
+对象类型和引用类型之间具有继承（类）/实现（接口）的关系；<br>
+对象类型不可变，引用类型可变；<br>
+方法具有多态性，属性不具有多态性；<br>
+引用类型变量发出的方法调用的到底是哪个类中的方法，必须在程序运行期间才能确定；<br>
+多态不能调用“只在子类存在但在父类不存在”的方法；<br>
+如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</p>
+
                 </div>
               </div>
               
