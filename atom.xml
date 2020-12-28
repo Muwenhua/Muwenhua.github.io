@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://muwenhua.github.io</id>
     <title>Rain_blog</title>
-    <updated>2020-12-28T09:08:50.677Z</updated>
+    <updated>2020-12-28T09:32:19.367Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://muwenhua.github.io"/>
     <link rel="self" href="https://muwenhua.github.io/atom.xml"/>
@@ -876,16 +876,17 @@ this.name = name;
 多态不能调用“只在子类存在但在父类不存在”的方法；<br>
 如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</p>
 <!-- more -->
-<p>import java.util.Scanner;</p>
-<pre><code>//基类Shape建立了一个通用接口，所有（几何）形状都可以描绘和删除。
+<pre><code>import java.util.Scanner;
+
+//基类Shape建立了一个通用接口，所有（几何）形状都可以描绘和删除。
 class Shape {
 void draw() {
 }
 void erase() {
 }
-</code></pre>
-<p>}</p>
-<pre><code>//派生类覆盖了draw方法，为每种特殊类型的几何形状都提供了独一无二的行为。
+}
+
+//派生类覆盖了draw方法，为每种特殊类型的几何形状都提供了独一无二的行为。
 class Circle extends Shape {
 @Override // @Override注解，表示覆盖父类方法
 void draw() {
