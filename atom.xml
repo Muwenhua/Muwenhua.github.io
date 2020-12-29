@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://muwenhua.github.io</id>
     <title>Rain_blog</title>
-    <updated>2020-12-28T09:32:19.367Z</updated>
+    <updated>2020-12-29T01:11:33.455Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://muwenhua.github.io"/>
     <link rel="self" href="https://muwenhua.github.io/atom.xml"/>
@@ -786,7 +786,7 @@
         <link href="https://muwenhua.github.io/post/java-de-dui-xiang-you-te-zheng-dao-chou-xiang-lei-yu-jie-kou/">
         </link>
         <updated>2020-11-26T14:50:28.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id=""><img src="https://muwenhua.github.io/post-images/1606739357359.jpg" alt="" loading="lazy"></h2>
+        <summary type="html"><![CDATA[<hr>
 <p>在了解抽象类与接口之前，我们需要首先明白面向对象的三大特征：封装、多态与继承<br>
 1.1 封装<br>
 封装是指把一个对象的状态信息（也就是属性）隐藏在对象内部，不允许外部对象直接访问对象的内部信息。但是可以提供一些可以被外界访问的方法来操作属性。就好像我们看不到挂在墙上的空调的内部的零件信息（也就是属性），但是可以通过遥控器（方法）来控制空调。如果属性不想被外界访问，我们大可不必提供方法给外界访问。但是如果一个类没有提供给外界访问的方法，那么这个类也没有什么意义了。就好像如果没有空调遥控器，那么我们就无法操控空凋制冷，空调本身就没有意义了（当然现在还有很多其他方法 ，这里只是为了举例子）。</p>
@@ -831,7 +831,7 @@ this.name = name;
 多态不能调用“只在子类存在但在父类不存在”的方法；<br>
 如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h2 id=""><img src="https://muwenhua.github.io/post-images/1606739357359.jpg" alt="" loading="lazy"></h2>
+        <content type="html"><![CDATA[<hr>
 <p>在了解抽象类与接口之前，我们需要首先明白面向对象的三大特征：封装、多态与继承<br>
 1.1 封装<br>
 封装是指把一个对象的状态信息（也就是属性）隐藏在对象内部，不允许外部对象直接访问对象的内部信息。但是可以提供一些可以被外界访问的方法来操作属性。就好像我们看不到挂在墙上的空调的内部的零件信息（也就是属性），但是可以通过遥控器（方法）来控制空调。如果属性不想被外界访问，我们大可不必提供方法给外界访问。但是如果一个类没有提供给外界访问的方法，那么这个类也没有什么意义了。就好像如果没有空调遥控器，那么我们就无法操控空凋制冷，空调本身就没有意义了（当然现在还有很多其他方法 ，这里只是为了举例子）。</p>
@@ -944,6 +944,7 @@ oneS.draw();
 }
 </code></pre>
 <!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://muwenhua.github.io/post-images/1606739357359.jpg" alt="" loading="lazy"></figure>
 <p>1.3.1. 在一个静态方法内调用一个非静态成员为什么是非法的?<br>
 由于静态方法可以不通过对象进行调用，因此在静态方法里，不能调用其他非静态变量，也不可以访问非静态变量成员。</p>
 <p>1.3.2. 静态方法和实例方法有何不同<br>
